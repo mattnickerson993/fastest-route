@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
+    <link href="fastestroute.css" rel="stylesheet">
+    <title>Fastest Route</title>
+    </head>
+    <body onload="initialize()">
+        
+        <div class ="start-container">
+          <h2>Enter Travel Plans Below</h2>
+          <div class="my-destinations" id="my-destinations">
+            <input type="text" id="destination0" placeholder="Start" class="dest">
+
+          </div>
+            
+            <button id="btn-submit">Submit</button>
+            <div class="btn-container">
+                <a href="" class="btn-main btn-plus" id ="btn-plus">➕</a>
+                <a href="" class="btn-main btn-minus" id ="btn-minus">➖</a>
+          </div>
+            
+        </div>
+        <div id="map"></div>
+        <div class="final-output" id="final-data">
+          <a href="" class="x">X</a>
+          
+        </div>
+        
+    <script src="env.js"></script>
+    <script src="fastestroute.js"></script>
+    </body>
+</html>
+
+<!-- version 1.0 is aimed at assisting a traveling nurse and therapist in planning there day. Especially if they have been asked
+to pick up patients in locations they are not familiar with. Clinicians can see each destination on the map as well as time and mileage of each leg
+of the trip and can plan accordingly-->
+
+<!-- bugs fixed- adding total mileage (was not parsing large #s with commas ie 2,344 ....used replace) -->
